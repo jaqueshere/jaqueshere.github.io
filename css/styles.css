@@ -8,18 +8,24 @@ html {
 	-webkit-font-smoothing: inherit;
 }
 
+#wrapper {
+  /*Colored backdrop for readability */
+  background-color:   #0F0F2E;
+  margin-top:0;
+}
+
 body {
+	margin:0;
 	background-color: #0F0F2E;
 	font-family: "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .top-nav {
 	width: 100%;
-	height: 8.375rem;
+	height: 8.875rem;
 	padding: 1px 1px 1px 1rem;
-	background-image: url("https://images.unsplash.com/photo-1431538510849-b719825bf08b?q=80&fm=jpg&s=6fd7a983e3b43e66d2b6062856b9df66");
-  	background-position: 100% 20%;
-	color:gray;
+  	background-color: #fff;
+	color: gray;
 	margin:0;
 }
 
@@ -27,6 +33,10 @@ body {
 	float: right;
 	font-size: 2rem;
 	padding: 0.5em 1em 1px 1em;
+}
+
+#headline{
+  margin: auto;
 }
 
 .card > p {
@@ -39,6 +49,7 @@ body {
 }
 
 #tagline {
+/* original style for about-page had 1.2rem */
 	font-size: 1.5rem;
 }
 
@@ -47,40 +58,195 @@ body {
 	padding: 0.5rem 1rem 0.5rem 1rem;
 }
 
+@media only screen and (max-width: 800px) {
+	   .top-nav {
+		width: 100%;
+		height: 8.875rem;
+		padding: 1px 1px 1px 0.5rem;
+	  	background-color: #fff;
+		color: gray;
+		margin:0;
+	}
+
+	.top-nav > .content {
+		float: right;
+		font-size: 1.5rem;
+		padding: 0.25em 1em 1px 0.5em;
+	}
+
+	.card > p {
+		margin: 0;
+		padding: 0.5rem 1rem 1px 0;
+	}
+
+	#nametag {
+		font-size: 2rem;
+		margin-top: 1rem;
+		margin-left: 1rem;
+	}
+
+	#tagline {
+	/* original style for about-page had 1.2rem */
+		font-size: 1.5rem;
+		margin-left: 1rem;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	   .top-nav {
+		width: 100%;
+		height: 8.875rem;
+		padding: 1px 1px 1px 0.25rem;
+	  	background-color: #fff;
+		color: gray;
+		margin:0;
+	}
+
+	.top-nav > .content {
+		float: right;
+		font-size: 0.75rem;
+		padding: 0.25em 0.5em 1px 0.5em;
+	}
+
+	.card > p {
+		margin: 0;
+		padding: 0.5rem 0.5rem 1px 0;
+	}
+
+	#nametag {
+		font-size: 1rem;
+		margin-top: 1rem;
+		margin-left: 1rem;
+	}
+
+	#tagline {
+	/* original style for about-page had 1.2rem */
+		font-size: 0.75rem;
+		margin-left: 1rem;
+	}
+
+	.menulinks {
+		padding-left:0;
+		padding-right:0;
+	}
+
+	.menulinks > li {
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
+	}
+}
+
+h1 {
+ font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 30px;
+}
+
+h2 {
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 27px;
+}
+
+#summary {
+  display: inline-block;
+  width: 100%;
+  padding: 1em 0 3em 0;
+  font-size: 18px;
+  font-family: "Gentium Basic", Georgia, serif;
+  color: white;
+  vertical-align: top;
+  background-color: gray;
+  margin: 0em;
+}
+
+@media only screen and (max-width:400px){
+
+#summary {
+    font-size: 12px;
+    padding: 1rem 1rem 3em 1rem;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+  h2 {
+    font-size: 14px;
+  }
+}
+
+.introduction-section, 
+.interests-section, .final-thoughts{
+  max-width: 30em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+}
+
+.introduction-section > p,
+.interests-section > p,
+.final-thoughts > p {
+  /*in my browser, font-weight only seems to cause a change when it is increased past 600, at which point the browser seems to use a different font (with pronounced serifs) */
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+
+#face {
+  float: right;
+  width: 100%;
+    margin: 0px;
+}
+
+#picframe {
+  float: right;
+  width: 20%;
+  /*Useful for a caption?*/
+  font-size: 30px;
+  color: gray;
+  background-color: #DEEFFF;
+  margin: 2em;
+  vertical-align: top;
+}
+
 .introduction {
 	width: 100%;
 	height: 10rem;
-	padding: 1px;
-	background-image: url("https://images.unsplash.com/photo-1431538510849-b719825bf08b?q=80&fm=jpg&s=6fd7a983e3b43e66d2b6062856b9df66");
+	padding: 1rem 1px 1px 1px;
+	/*background-image: url("https://images.unsplash.com/photo-1431538510849-b719825bf08b?q=80&fm=jpg&s=6fd7a983e3b43e66d2b6062856b9df66");
   background-position: 0% 60%;
   background-size: cover;
-  background-align: left;
+  background-align: left;*/
+  	background-color: gray;
+  	font-family: "Gentium Basic", Georgia, serif;
+  	font-weight: 300;
+  	letter-spacing: 0.05em;
 }
 
 .introduction > .content {
 	width: 60%;
 	height: 10rem;
+	/*color: #fff;*/
 	color: #fff;
 	padding: 1px 2rem 1px 2rem;
 	margin: 0 auto;
+
 }
 
 .gallery {
 	padding: 1px;
-	background-image: url("https://images.unsplash.com/photo-1431538510849-b719825bf08b?q=80&fm=jpg&s=6fd7a983e3b43e66d2b6062856b9df66");
+	/*background-image: url("https://images.unsplash.com/photo-1431538510849-b719825bf08b?q=80&fm=jpg&s=6fd7a983e3b43e66d2b6062856b9df66");
   background-position: 0% 80%;
   background-size: cover;
-  background-align: left;
+  background-align: left;*/
+  	background-color: gray;
 }
 
 .gallery > .content {
-	width: 60%;
+	width: 90%;
 	margin: 0 auto;
 }
 
 .slides > li {
 	display: inline-block;
-	padding: 0.5rem;
+	padding: 1.5rem;
 	vertical-align: top;
 }
 
@@ -91,21 +257,25 @@ a {
 
 footer {
 	width: 100%;
-	height: 15rem;
+	height: 17rem;
 	padding: 1px;
-	background-image: url("https://images.unsplash.com/photo-1431538510849-b719825bf08b?q=80&fm=jpg&s=6fd7a983e3b43e66d2b6062856b9df66");
-  background-position: 0% 100%;
-  
-  background-align: left;
+	padding-bottom: 1rem;
+  	background-color: white;
 }
 
 footer > #links {
 	font-size: 18px;
-  padding: 1em;
-  max-width: 24em;
-  margin-left: auto;
-  margin-right: auto;
-  color: #fff;
+  	padding: 1em;
+  	width: 38rem;
+  	margin-left: auto;
+  	margin-right: auto;
+  	color: gray;
+}
+
+.social {
+	padding-left:0;
+	text-align: center;
+	margin: 0 auto;
 }
 
 .social > li {
@@ -113,4 +283,77 @@ footer > #links {
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: bold;
   letter-spacing: -.1em;
+  padding: 0.25rem;
 }
+
+@media only screen and (max-width: 400px){
+  footer {
+    height: 16rem;
+  }
+
+  footer > #links {
+	font-size: 1rem;
+  	padding: 0.25em;
+  	width: 15rem;
+  	margin-left: auto;
+  	margin-right: auto;
+  	color: gray;
+}
+
+.social {
+	padding-left:0;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.social > li {
+  display: inline-block;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  letter-spacing: -.1em;
+  padding: 0.25rem;
+}
+
+}
+
+a:link{
+  color: gray;
+}
+
+a:visited{
+  color: gray;
+}
+
+a:selected{
+  color: #1F1F2E;
+}
+
+#links{
+  color: white;
+  font-size: 18px;
+  padding: 1em;
+  max-width: 24em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.notes {
+	max-width: 14rem;
+	margin: 0 auto;
+}
+
+@media only screen and (max-width: 400px) {
+    #links{
+    color: white;
+    font-size: 10px;
+    padding: 1em;
+    max-width: 24em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+#links > p{
+  font-family: "Gentium Basic", Georgia, serif;
+}
+
