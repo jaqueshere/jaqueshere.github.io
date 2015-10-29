@@ -27,6 +27,7 @@ body {
   	background-color: #fff;
 	color: gray;
 	margin:0;
+	border-bottom: 1px solid #333333;
 }
 
 .top-nav > .content {
@@ -42,6 +43,7 @@ body {
 .card > p {
 	margin: 0;
 	padding: 0.5rem 1rem 1px 0;
+	color: #333333;
 }
 
 #nametag {
@@ -57,6 +59,27 @@ body {
 	display: inline-block;
 	padding: 0.5rem 1rem 0.5rem 1rem;
 }
+
+.menulinks > li > a {
+	transition: color 0.25s linear;
+	border: 0px solid;
+	font-size: 1em;
+	font-weight: 500;
+	letter-spacing: 0.03em;
+	text-decoration: none;
+}
+
+.menulinks > .active > a {
+	color: #333333;
+	font-weight: 500;
+}
+
+.menulinks > li > a:hover {
+	color: #333333;
+	font-weight: 500;
+	cursor: pointer;
+}
+
 
 @media only screen and (max-width: 800px) {
 	   .top-nav {
@@ -237,10 +260,11 @@ h2 {
   background-size: cover;
   background-align: left;*/
   	background-color: gray;
+  	border-bottom: 1px solid #333333;
 }
 
 .gallery > .content {
-	width: 90%;
+	width: 95%;
 	margin: 0 auto;
 }
 
@@ -248,6 +272,13 @@ h2 {
 	display: inline-block;
 	padding: 1.5rem;
 	vertical-align: top;
+}
+
+.slides > li > .frame {
+	border: 2px solid #333333;
+	width: 27rem;
+	padding: 1rem;
+	margin: 0.5rem;
 }
 
 a {
@@ -316,8 +347,17 @@ footer > #links {
 
 }
 
-a:link{
+.social > li > a:link{
   color: gray;
+  transition: color 0.25s linear;
+  text-decoration: none;
+}
+
+
+.social > li > a:hover {
+	color: #333333;
+	font-weight: 500;
+	cursor: pointer;
 }
 
 a:visited{
