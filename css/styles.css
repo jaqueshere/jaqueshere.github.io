@@ -115,7 +115,7 @@ body {
 	}
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 660px) {
 	   .top-nav {
 		width: 100%;
 		height: 8.875rem;
@@ -181,7 +181,7 @@ h2 {
   margin: 0em;
 }
 
-@media only screen and (max-width:400px){
+@media only screen and (max-width:660px){
 
 #summary {
     font-size: 12px;
@@ -253,6 +253,18 @@ h2 {
 
 }
 
+@media only screen and (max-width:360px) {
+	.introduction {
+		font-size: 0.8rem;
+	}
+}
+
+@media only screen and (max-width:320px) {
+	.introduction > .content {
+		width: 80%;
+	}
+}
+
 .gallery {
 	padding: 1px;
 	/*background-image: url("https://images.unsplash.com/photo-1431538510849-b719825bf08b?q=80&fm=jpg&s=6fd7a983e3b43e66d2b6062856b9df66");
@@ -264,14 +276,43 @@ h2 {
 }
 
 .gallery > .content {
-	width: 95%;
+	width: 98%;
 	margin: 0 auto;
+}
+
+.gallery > .content > .slides {
+	margin-left: 0;
+	margin-top:0;
+	padding-left: 0;
+	width: 98%;
+	text-align:center;
+}
+
+.snapshot {
+	width: 25rem;
+}
+
+@media only screen and (max-width:660px){
+	.gallery > .content {
+		width: 31rem;
+		margin: 0 auto;
+	}
+
+	.gallery > .content > .slides {
+		margin-left: 0;
+		margin-top:0;
+		padding-left: 0;
+		width: 31rem;
+		text-align:center;
+	}
+
 }
 
 .slides > li {
 	display: inline-block;
 	padding: 1.5rem;
 	vertical-align: top;
+	margin-left:0;
 }
 
 .slides > li > .frame {
@@ -280,6 +321,78 @@ h2 {
 	padding: 1rem;
 	margin: 0.5rem;
 }
+
+@media only screen and (max-width:980px) {
+	.slides > li > .frame {
+		width: 25rem;
+	}
+
+	.snapshot {
+		width: 23rem;
+	}	
+}
+
+@media only screen and (max-width: 360px) {
+	.gallery > .content {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.gallery > .content > .slides {
+		margin-left: 0;
+		margin-top:0;
+		padding-left: 0;
+		width: 100%;
+		text-align:center;
+	}
+
+	.slides > li {
+		padding: 0;
+	}
+
+	.slides > li > .frame {
+		border: 2px solid #333333;
+		width: 20rem;
+		padding: 1rem;
+		margin: 0.5rem;	
+	}
+
+	.snapshot {
+		width: 18rem;
+	}
+}
+
+
+@media only screen and (max-width: 320px) {
+	.gallery > .content {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.gallery > .content > .slides {
+		margin-left: 0;
+		margin-top:0;
+		padding-left: 0;
+		width: 100%;
+		text-align:center;
+	}
+
+	.slides > li {
+		padding: 0;
+	}
+
+	.slides > li > .frame {
+		border: 2px solid #333333;
+		width: 17rem;
+		padding: 1rem;
+		margin: 0.5rem;	
+	}
+
+	.snapshot {
+		width: 15rem;
+	}
+}
+
 
 a {
 	color: #4c5058;
