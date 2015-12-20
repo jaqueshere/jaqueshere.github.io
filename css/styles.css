@@ -89,8 +89,12 @@ body {
 	cursor: pointer;
 }
 
+.slide_cap {
+	color:gray;
+	font-size:1rem;
+}
 
-@media only screen and (max-width: 1600px) {
+@media only screen and (min-width: 660px) {
 
 	.owl-carousel .owl-item {
 		overflow:hidden;
@@ -129,6 +133,27 @@ body {
 		font-size: 1.5rem;
 		margin-left: 1rem;
 	}
+	  #namecard {
+	  	width: 60%;
+	  	margin: 0 auto;
+	  	padding: 3rem 0;
+	  	font-family: "Gentium Basic", Georgia, serif;
+	  	color:gray;
+	  }
+
+	  #namecard #desc {
+	  	display: inline-block;
+	  	width: 40%;
+	  	vertical-align: top;
+	  	padding: 0 3rem;
+	  }
+
+	  #namecard #details {
+	  	display:inline-block;
+	  	width: 40%;
+	  	vertical-align: top;
+	  	padding: 0 3rem;
+	  }
 }
 
 @media only screen and (max-width: 660px) {
@@ -350,6 +375,22 @@ h2 {
 		text-align:center;
 	}
 
+	#namecard {
+	  	width: 100%;
+	  	font-family: "Gentium Basic", Georgia, serif;
+	  	color:gray;
+	}
+
+	#namecard #desc {
+	  	width: 60%;
+	  	margin: 0 auto;
+	}
+
+	#namecard #details {
+	  	width: 40%;
+	  	margin: 0 auto;
+	}
+
 }
 
 .slides > li {
@@ -473,32 +514,32 @@ footer > #links {
 }
 
 @media only screen and (max-width: 400px){
-  footer {
-    height: 16rem;
-  }
+	footer {
+	    height: 16rem;
+	 }
 
-  footer > #links {
-	font-size: 1rem;
-  	padding: 0.25em;
-  	width: 15rem;
-  	margin-left: auto;
-  	margin-right: auto;
-  	color: gray;
-}
+	footer > #links {
+		font-size: 1rem;
+	  	padding: 0.25em;
+	  	width: 15rem;
+	  	margin-left: auto;
+	  	margin-right: auto;
+	  	color: gray;
+	}
 
-.social {
-	padding-left:0;
-	text-align: center;
-	margin: 0 auto;
-}
+	.social {
+		padding-left:0;
+		text-align: center;
+		margin: 0 auto;
+	}
 
-.social > li {
-  display: inline-block;
-  font-family: "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: bold;
-  letter-spacing: -.1em;
-  padding: 0.25rem;
-}
+	.social > li {
+	  display: inline-block;
+	  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+	  font-weight: bold;
+	  letter-spacing: -.1em;
+	  padding: 0.25rem;
+	}
 
 }
 
@@ -545,6 +586,28 @@ a:selected{
     max-width: 24em;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  #namecard {
+  	width: 100%;
+  	font-family: "Gentium Basic", Georgia, serif;
+  	color:gray;
+  }
+
+  #namecard #desc {
+  	width: 94%;
+  	margin: 0 auto;
+  }
+
+  #namecard #details {
+  	width: 94%;
+  	margin: 0 auto;
+  }
+
+  .slide_cap {
+  	width: 250px;
+  	margin:0 auto;
+  	text-align: left;
   }
 }
 
