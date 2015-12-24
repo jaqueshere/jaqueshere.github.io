@@ -309,6 +309,7 @@ a:selected{
 
 	footer #links {
 		width: 300px;
+		color: gray;
 	}
 }
 
@@ -362,6 +363,7 @@ a:selected{
 
 	footer #links {
 		width: 330px;
+		color: gray;
 	}
 }
 
@@ -395,7 +397,7 @@ a:selected{
 	}
 	
 	#links {
-	    color: white;
+	    color: gray;
 	    font-size: 10px;
 	    padding: 1em;
 	    max-width: 24em;
