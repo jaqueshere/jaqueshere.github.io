@@ -8,9 +8,17 @@ html {
 	-webkit-font-smoothing: inherit;
 }
 
+.gallery .content {
+	width: 100%;
+}
+
 .owl-carousel .owl-wrapper-outer {
 	/*overflow:hidden;*/
 	position: relative;
+}
+
+.owl-item {
+	width: 25%;
 }
 
 .owl-item .frame {
@@ -504,7 +512,7 @@ a:selected{
 	}
 
 	  .gallery > .content {
-		width: 31rem;
+		width: 100%;
 		margin: 0 auto;
 	}
 
@@ -512,7 +520,7 @@ a:selected{
 		margin-left: 0;
 		margin-top:0;
 		padding-left: 0;
-		width: 31rem;
+		width: 25%;
 		text-align:center;
 	}
 
