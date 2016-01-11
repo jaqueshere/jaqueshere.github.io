@@ -13,9 +13,13 @@ html {
 	position: relative;
 }
 
+.owl-item .frame {
+	margin: 0 auto;
+}
+
 .owl-theme .owl-controls {
     display: block;
-    width: 7rem;
+    width: 5rem;
     margin: 0 auto;
 }
 
