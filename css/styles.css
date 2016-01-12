@@ -35,6 +35,10 @@ html {
     display: inline-block;
 }
 
+.active span {
+	opacity:1 !important;
+}
+
 .owl-theme .owl-controls span {
     background: none repeat scroll 0 0 #869791;
     border-radius: 20px;
